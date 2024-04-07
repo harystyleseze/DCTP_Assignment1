@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first Webpage</title>
+    <style>
+      body {
+        background-color: #f7f7f7;
+      }
+      button {
+        color: bisque;
+        background-color: #f7f7f7da;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      ul {
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
     <h1>My Portfolio Website</h1>
@@ -12,7 +28,7 @@
         <ul>
           <li><a href="./index.html">Home Page</a></li>
           <li><a href="./contact.html">Contact Me</a></li>
-          <li><a href="./table.html">Table</a></li>
+          <li><a href="./table.html">Calculator</a></li>
         </ul>
       </nav>
     </header>
@@ -24,8 +40,15 @@
         I obtained my bachelor's in engineering degree. I am currently learning
         backend software engineering at Alt School.
       </p>
-      <br />
-      <b>My goal is to become a full-stack software engineer.</b>
+      <span>My goal is to become a full-stack software engineer.</span>
+      <div>
+        <article>
+          <strong> <p>Summary</p></strong>
+          I am a power platform developer. I work for different sectors to build
+          low code solution. I am very passionate about building my skill in
+          open source technologies such as JavaScript, flutter, and next.js
+        </article>
+      </div>
       <div>
         <h2>My Tech Skills</h2>
         <p>These are my tech skills:</p>
@@ -37,7 +60,43 @@
           <li>AI</li>
         </ul>
       </div>
+      <section>
+        <h1>Contact Me</h1>
+        <form action="#">
+          <div>
+            <label for="form_name">Name:</label>
+            <input type="text" id="form_name" name="name" required />
+          </div>
+          <div>
+            <label for="form_email" id="name">Email:</label>
+            <input type="email" id="form_email" name="email" required />
+          </div>
+          <div>
+            <label for="form_message" id="name">Message:</label>
+            <br />
+            <textarea
+              name="message"
+              id="form_message"
+              cols="30"
+              rows="10"
+              name="message"
+              required
+            >
+            </textarea>
+          </div>
+          <div>
+            <label for="form_priority">Priority:</label>
+            <select name="form_priority_options" id="form_priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
+    <br />
     <footer>
       <p>&copy; 2024 Created by Harrison</p>
     </footer>
